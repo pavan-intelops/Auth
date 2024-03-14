@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: nodecxcv_c
+  labels:
+    app: nodecxcv_c
+  name: nodecxcv_c
+spec:
+  ports:
+  
+    - protocol: TCP
+      port: 23234
+      targetPort: 23234
+   
+   
+  selector:
+    app: nodecxcv_c
+  type: ClusterIP
